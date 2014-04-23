@@ -7,6 +7,9 @@ insulin-calc
 
 This insulin drip protocol calculator is intended for use in hyperglycemic adult patients in an ICU setting, but not specifically tailored for those individuals with diabetic emergencies, such as diabetic ketoacidosis (DKA) or hyperglycemic hyperosmolar states (HHS). When these diagnoses are being considered, or if BG >= 500 mg/dL, an MD should be consulted for specific orders. Also, please notify an MD if the response to the insulin drip is unusual/unexpected, or if any situation arises that is not adequately addressed by these guidelines.
 
+### DEPLOY INSTRUCTIONS
+Copy contents of DIST directory to desired production location. All other files are used only for development/build purposes.
+
 #### DISCLAIMER
 
 This is a JavaScript calculator developed by Christopher Echols and Andrew Edwards under the guidance of Dr. Chenliang Jeffrey Wang, based on the [Yale Insulin Drip Protocol](http://www.hospitalmedicine.org/ResourceRoomRedesign/pdf/YNHH_IIP_100-139.pdf "Yale Insulin Drip Protocol"). It was developed with careful adherence to the protocol algorithm and is computationally correct to the best of the developers' knowledge. However, this calculator is provided purely as an informational resource with NO guarantees of accuracy, and is not to be used or relied upon for any diagnostic or treatment purposes without independent verificaion by a trained and licensed physician.
