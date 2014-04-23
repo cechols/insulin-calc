@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yale Insulin Drip Protocol</title>
+    <meta name="viewport" content="width=600, maximum-scale=1.0, user-scalable=no" />
+    <link href='styles/style.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+
+<body>
+
+	<div id="protocol">
+		<div class="protocol_content">
+			<h2>Yale Insulin Drip Protocol</h1>
+			<p>
+		    	<strong>If BG < 60 mg/dL</strong><br />
+		    	Stop infusion, give 25 g of D50 IV, recheck BG every 15 minutes. <span id="B3"></span>
+			</p>
+			<p>
+			    <strong>If BG 60 - 74 mg/dL</strong><br />
+			    Stop infusion, give 12.5 g of D50 IV or 8 oz of juice, recheck BG every 15 minutes. <span id="B6"></span>
+			</p>
+			<div id="calculator">
+				<form>
+					<div class="col_row">
+						<div class="col_1">Current BG:</div>
+						<div class="col_2"><input type="text" id="currentBG" name="Current BG" placeholder="Current BG" size="6" />mg/dL</div>
+					</div>
+					<div class="col_row">
+						<div class="col_1">Last BG:</div>
+						<div class="col_2"><input type="text" id="lastBG" name="Last BG" placeholder="Last BG" size="6" />mg/dL</div>
+					</div>
+					<div class="col_row">
+						<div class="col_1">Time Since Last BG:</div>
+						<div class="col_2"><input type="text" id="timeSinceLastBG" name="Time Since Last BG" placeholder="Time Since Last BG" size="6" />hr</div>
+					</div>
+					<div class="col_row">
+						<div class="col_1">Current Rate:</div>
+						<div class="col_2"><input type="text" id="currentRate" name="Current Rate" placeholder="Current Rate" size="6" />units/hr</div>
+				    </div>
+				    <input id="calcButton" type="button" value="Calculate" />
+				</form>
+			</div>
+			<div id="newRate"></div>
+			<div id="alert"></div>
+		</div>
+	</div>
+    <script src="scripts/app.min.js"></script>
+
+</body>
+
+</html>
